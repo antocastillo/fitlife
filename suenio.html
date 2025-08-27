@@ -1,81 +1,66 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>...</title>
-    
-</head>
-<body>
-    <h1>SUEÑO</h1>
-    <p>Seguimiento de sueño</p>
-    <p>Obtén una recomendación sobre el mejor momento para acostarse cada noche.</p>
-</body>
-</html>
-=======
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seguimiento de Sueño</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>😴 Seguimiento de Sueño - MiApp Salud</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body class="bg-light">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25  " fill="currentColor" class="bi bi-house-heart" viewBox="0 0 16 16">
-        <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982"/>
-        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
-      </svg> Home </a>
-      <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalAgregarSueño">+ Agregar Registro</button>
+      <a class="navbar-brand" href="index.html">🏠 Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">😴 Sueño</a></li>
+          <li class="nav-item"><a class="nav-link" href="act_fisica.html">🏃 Actividad Física</a></li>
+          <li class="nav-item"><a class="nav-link" href="comida.html">🥗 Alimentación</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
- 
   <div class="container mt-4">
-    <h2 class="text-center mb-4">Seguimiento de Sueño</h2>
+    <h2 class="text-center mb-4">😴 Seguimiento de Sueño</h2>
 
-    
     <div class="row">
       <div class="col-md-4 mb-3">
         <div class="card shadow-sm">
           <div class="card-body">
             <h5 class="card-title">24 Ago 2025</h5>
-            <p><strong>Duración:</strong> 7h 30min</p>
-            <p><strong>Calidad:</strong> Buena</p>
-            <span class="badge bg-success">Completado</span>
+            <p>Duración: 7h 30min</p>
+            <p>Calidad: Buena</p>
+            <span class="badge bg-success">✅ Completado</span>
           </div>
         </div>
       </div>
-
       <div class="col-md-4 mb-3">
         <div class="card shadow-sm">
           <div class="card-body">
             <h5 class="card-title">23 Ago 2025</h5>
-            <p><strong>Duración:</strong> 5h 45min</p>
-            <p><strong>Calidad:</strong> Regular</p>
-            <span class="badge bg-warning text-dark">Incompleto</span>
+            <p>Duración: 5h 45min</p>
+            <p>Calidad: Regular</p>
+            <span class="badge bg-warning text-dark">⏳ Incompleto</span>
           </div>
         </div>
       </div>
-
       <div class="col-md-4 mb-3">
         <div class="card shadow-sm">
           <div class="card-body">
             <h5 class="card-title">22 Ago 2025</h5>
-            <p><strong>Duración:</strong> 8h 15min</p>
-            <p><strong>Calidad:</strong> Excelente</p>
-            <span class="badge bg-success">Completado</span>
+            <p>Duración: 8h 15min</p>
+            <p>Calidad: Excelente</p>
+            <span class="badge bg-success">✅ Completado</span>
           </div>
         </div>
       </div>
-    </div>
 
     <div class="mt-5">
-      <h4>Historial Semanal</h4>
+      <h4>📊 Historial Semanal</h4>
       <table class="table table-bordered table-striped">
         <thead class="table-primary">
           <tr>
@@ -113,48 +98,11 @@
     </div>
   </div>
 
-  <div class="modal fade" id="modalAgregarSueño" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form>
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel">Agregar Registro de Sueño</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            <div class="mb-3">
-              <label for="fecha" class="form-label">Fecha</label>
-              <input type="date" class="form-control" id="fecha" required />
-            </div>
-            <div class="mb-3">
-              <label for="horaDormir" class="form-label">Hora de Dormir</label>
-              <input type="time" class="form-control" id="horaDormir" required />
-            </div>
-            <div class="mb-3">
-              <label for="horaDespertar" class="form-label">Hora de Despertar</label>
-              <input type="time" class="form-control" id="horaDespertar" required />
-            </div>
-            <div class="mb-3">
-              <label for="calidad" class="form-label">Calidad del Sueño</label>
-              <select class="form-select" id="calidad">
-                <option value="Excelente">Excelente</option>
-                <option value="Buena">Buena</option>
-                <option value="Regular">Regular</option>
-                <option value="Mala">Mala</option>
-              </select>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">Guardar</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+  <footer class="bg-primary text-white text-center py-3">
+    <p class="mb-0">© 2025 MiApp Salud 😴</p>
+  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
->>>>>>> d4948940761e40e557146f07b38bd3248598a833
+
