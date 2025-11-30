@@ -72,14 +72,20 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
+    //DOM:selecciono el formulario por ID
     const form = document.getElementById("form-sleep");
+    //DOM:selecciono el parrafo donde muestro resultados
     const resultado = document.getElementById("resultado");
+    //DOM:selecciono el tbody de la tabla para agregar filas 
     const tablaHistorial = document.getElementById("tablaHistorial").querySelector("tbody");
 
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
+   //DOM:escucho el evento "submit"del formulario 
+      form.addEventListener("submit", function(e) {
+      e.preventDefault(); //evita que la pagina se recargue 
 
+     //DOM:obtengo el valor del input "horadormir"
       const horaDormir = document.getElementById("horaDormir").value;
+      //DOM:obtengo el valor del input "horadespertar"
       const horaDespertar = document.getElementById("horaDespertar").value;
 
       if (!horaDormir || !horaDespertar) {
