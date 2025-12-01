@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-</body>
+<body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
@@ -26,14 +26,12 @@
     </div>
   </nav>
 
-
   <section class="py-5 bg-light text-center">
     <div class="container">
-      <h1 class="display-5 fw-bold"> Bienvenido a FitLife</h1>
+      <h1 class="display-5 fw-bold" id="tituloPrincipal"> Bienvenido a FitLife</h1>
       <p class="lead text-muted">💡 Tu espacio personal para llevar un control integral de tu bienestar: sueño, ejercicio y alimentación.</p>
     </div>
   </section>
-
 
   <section class="container py-5">
     <div class="row text-center">
@@ -67,10 +65,23 @@
     </div>
   </section>
 
-
   <footer class="bg-primary text-white text-center py-3">
-    <p class="mb-0">© 2025 FitLife 🍀</p>
+    <p class="mb-0">©️ 2025 FitLife 🍀</p>
   </footer>
+
+  <script>
+    /* 
+      DOM: Este código selecciona el elemento con el id "tituloPrincipal"
+      y cambia su texto después de 2 segundos.
+      Esto muestra cómo JavaScript puede modificar el contenido del HTML
+      de forma dinámica mediante el DOM.
+    */
+    const titulo = document.getElementById("tituloPrincipal");
+
+    setTimeout(() => {
+      titulo.textContent = "Bienvenido a FitLife 💚 ";
+    }, 2000);
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
